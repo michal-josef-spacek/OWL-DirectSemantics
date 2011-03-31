@@ -3,8 +3,8 @@ package OWL::DirectSemantics;
 use common::sense;
 use 5.008;
 
-our $VERSION = '0.000_01';
-BEGIN { $VERSION = "0.000_01"; }
+our $VERSION = '0.000_02';
+BEGIN { $VERSION = "0.000_02"; }
 
 use RDF::Trine '0.133';
 use RDF::Trine::Serializer::OwlFn;

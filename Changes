@@ -10,5 +10,13 @@ Home page:    <http://search.cpan.org/dist/OWL-DirectSemantics/>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=OWL-DirectSemantics>
 Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
+0.000_02 [2011-03-31]
+ - Make URI/IRI terminology consistent in
+   OWL::DirectSemantics::Element::Ontology.
+ - (Addition) Automatically determine the URI for the owl:Ontology.
+ - (Bugfix) Annotation handling improvements.
+ - (Bugfix) Serialize Imports() correctly in OwlFn.
+ - (Documentation) Fixed description for RDF::Trine::Serializer::OwlFn.
+
 0.000_01 [2011-03-30] # Hackathon Preview
 

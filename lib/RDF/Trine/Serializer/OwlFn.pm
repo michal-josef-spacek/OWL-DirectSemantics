@@ -4,7 +4,7 @@ use 5.008;
 use strict;
 
 our $VERSION;
-BEGIN { $VERSION = "0.000_01"; }
+BEGIN { $VERSION = "0.000_02"; }
 
 use RDF::Trine;
 use base qw[RDF::Trine::Serializer];
@@ -43,7 +43,7 @@ sub serialize_model_to_file
 
 =head1 NAME
 
-RDF::Trine::Serializer::OwlFn - OWL Functional Syntax Parser
+RDF::Trine::Serializer::OwlFn - OWL Functional Syntax Serializer
 
 =head1 SYNOPSIS
 

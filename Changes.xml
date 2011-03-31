@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:dbug="http://ontologi.es/doap-bugs#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dcs="http://ontologi.es/doap-changeset#" xmlns:doap="http://usefulinc.com/ns/doap#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-<rdf:Description rdf:nodeID="r15FDADFC5AC411E08F70BF4DDBBF319Er0">
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r0">
+	<dcs:item rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r1"/>
+	<dcs:item rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r2"/>
+	<dcs:item rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r3"/>
+	<dcs:item rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r4"/>
+	<dcs:item rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r5"/>
+	<dcs:versus rdf:resource="http://purl.org/NET/cpan-uri/dist/OWL-DirectSemantics/v_0-000_01"/>
+</rdf:Description>
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r1">
+	<rdf:type rdf:resource="http://ontologi.es/doap-changeset#Documentation"/>
+	<rdfs:label xml:lang="en">Fixed description for RDF::Trine::Serializer::OwlFn.</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r2">
+	<rdf:type rdf:resource="http://ontologi.es/doap-changeset#Bugfix"/>
+	<rdfs:label xml:lang="en">Annotation handling improvements.</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r3">
+	<rdf:type rdf:resource="http://ontologi.es/doap-changeset#Bugfix"/>
+	<rdfs:label xml:lang="en">Serialize Imports() correctly in OwlFn.</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r4">
+	<rdf:type rdf:resource="http://ontologi.es/doap-changeset#Addition"/>
+	<rdfs:label xml:lang="en">Automatically determine the URI for the owl:Ontology.</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r5">
+	<rdfs:label xml:lang="en">Make URI/IRI terminology consistent in OWL::DirectSemantics::Element::Ontology.</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r6">
 	<doap:browse rdf:resource="http://goddamn.co.uk/viewvc/perlmods/OWL-DirectSemantics/"/>
 	<rdf:type rdf:resource="http://usefulinc.com/ns/doap#SVNRepository"/>
 </rdf:Description>
@@ -22,17 +49,25 @@
 	<doap:name>OWL-DirectSemantics</doap:name>
 	<doap:programming-language>Perl</doap:programming-language>
 	<doap:release rdf:resource="http://purl.org/NET/cpan-uri/dist/OWL-DirectSemantics/v_0-000_01"/>
-	<doap:repository rdf:nodeID="r15FDADFC5AC411E08F70BF4DDBBF319Er0"/>
+	<doap:release rdf:resource="http://purl.org/NET/cpan-uri/dist/OWL-DirectSemantics/v_0-000_02"/>
+	<doap:repository rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r6"/>
 	<doap:shortdesc xml:lang="en">representation of the direct semantics of OWL2</doap:shortdesc>
 	<doap:tester rdf:resource="http://tobyinkster.co.uk/#i"/>
 	<rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
 </rdf:Description>
 <rdf:Description rdf:about="http://purl.org/NET/cpan-uri/dist/OWL-DirectSemantics/v_0-000_01">
 	<dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-30</dc:issued>
-	<doap:file-release rdf:resource="http://backpan.cpan.org/authors/id/T/TO/TOBYINK/OWL-DirectSemantics-0.01.tar.gz"/>
+	<doap:file-release rdf:resource="http://backpan.cpan.org/authors/id/T/TO/TOBYINK/OWL-DirectSemantics-0.000_01.tar.gz"/>
 	<doap:revision rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.000_01</doap:revision>
 	<rdf:type rdf:resource="http://usefulinc.com/ns/doap#Version"/>
 	<rdfs:label xml:lang="en">Hackathon Preview</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.org/NET/cpan-uri/dist/OWL-DirectSemantics/v_0-000_02">
+	<dcs:changeset rdf:nodeID="r6B51AF5E5BE311E080F1ABC50B04BC15r0"/>
+	<dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-31</dc:issued>
+	<doap:file-release rdf:resource="http://backpan.cpan.org/authors/id/T/TO/TOBYINK/OWL-DirectSemantics-0.000_02.tar.gz"/>
+	<doap:revision rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.000_02</doap:revision>
+	<rdf:type rdf:resource="http://usefulinc.com/ns/doap#Version"/>
 </rdf:Description>
 <rdf:Description xmlns:ns1="http://www.w3.org/2002/07/owl#" rdf:about="http://tobyinkster.co.uk/#i">
 	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>

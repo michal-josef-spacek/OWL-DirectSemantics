@@ -1,7 +1,7 @@
 package OWL::DirectSemantics::Element;
 
 our $VERSION;
-BEGIN { $VERSION = "0.000_01"; }
+BEGIN { $VERSION = "0.000_02"; }
 
 use Moose;
 

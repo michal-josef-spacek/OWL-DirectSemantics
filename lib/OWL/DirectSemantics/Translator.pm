@@ -1,7 +1,7 @@
 package OWL::DirectSemantics::Translator;
 
 our $VERSION;
-BEGIN { $VERSION = "0.000_01"; }
+BEGIN { $VERSION = "0.000_02"; }
 
 use Moose;
 use RDF::Trine qw[statement iri literal blank variable];
@@ -23,6 +23,8 @@ sub translate
 	my ($self, $model, $ontology_node) = @_;
 	
 	$self->init($model);
+
+	$ontology_node ||= $self->guess_ontology_node;
 
 	# OWL2RDF{3.1.2}
 	$self
@@ -68,7 +70,7 @@ sub translate
 	{
 		$ax->metadata($metadata);
 	}
-
+	
 	my $ontology = $self->ontology;
 	$self->init;
 	return $ontology;
@@ -90,6 +92,28 @@ sub init
 	$self->ANN({});
 }
 
+sub guess_ontology_node
+{
+	my ($self) = @_;
+	
+	my @ontologies = $self->model->subjects($RDF->type, $OWL->Ontology);
+	my %count;
+	$self->model->get_statements(undef, $OWL->imports, undef)->each(sub{
+		my ($s, $p, $o) = (shift)->nodes;
+		push @ontologies, $s, $o;
+		$count{ $o->sse }++;
+	});
+	
+	# Make @ontologies unique.
+	{
+		my %tmp = map { $_->sse => $_ } @ontologies;
+		@ontologies = values %tmp;
+	}
+	
+	my ($node) = sort { ($count{$a->sse}||0) <=> ($count{$b->sse}||0) or $a->sse cmp $b->sse } @ontologies;
+	return $node;
+}
+
 sub ontology_header
 {
 	my ($self, $node) = @_;
@@ -97,9 +121,9 @@ sub ontology_header
 	$self->ontology( OWL::DirectSemantics::Element::Ontology->new )
 		unless $self->ontology;
 	
-	# ontologyURI
+	# ontologyIRI
 	{
-		$self->ontology->ontologyURI($node)
+		$self->ontology->ontologyIRI($node)
 			if defined $node;
 		$self->model->remove_statements($node, $RDF->type, $OWL->Ontology);
 	}
@@ -344,7 +368,7 @@ sub parse_annotations # NOT TESTED
 	my %ANN;
 
 	# Table 10
-	foreach my $ap ($self->AP)
+	foreach my $ap (values %{$self->AP})
 	{
 		next unless ref($ap) eq 'ARRAY';
 		foreach (@$ap)
@@ -405,7 +429,8 @@ sub ontology_annotations
 {
 	my ($self, $x) = @_;
 	return $self unless $x;
-	$self->ontology->annotations( $self->ANN->{ $x->sse } );
+	$self->ontology->annotations( $self->ANN->{ $x->sse } )
+		if ref($self->ANN->{ $x->sse }) eq 'ARRAY';
 	return $self;
 }
 

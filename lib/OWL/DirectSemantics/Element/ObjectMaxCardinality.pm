@@ -4,7 +4,7 @@ use 5.008;
 use common::sense;
 
 our $VERSION;
-BEGIN { $VERSION = "0.000_01"; }
+BEGIN { $VERSION = "0.000_02"; }
 
 use Moose;
 

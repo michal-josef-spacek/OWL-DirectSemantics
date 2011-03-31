@@ -4,7 +4,7 @@ use 5.008;
 use common::sense;
 
 our $VERSION;
-BEGIN { $VERSION = "0.000_01"; }
+BEGIN { $VERSION = "0.000_02"; }
 
 use Moose;
 
@@ -12,8 +12,8 @@ extends 'OWL::DirectSemantics::Element';
 with 'OWL::DirectSemantics::Writer::Dump';
 with 'OWL::DirectSemantics::Writer::FunctionalSyntax';
 
-has 'ontologyURI' => (is => 'rw', isa => 'RDF::Trine::Node');
-has 'versionURI'  => (is => 'rw', isa => 'RDF::Trine::Node');
+has 'ontologyIRI' => (is => 'rw', isa => 'RDF::Trine::Node');
+has 'versionIRI'  => (is => 'rw', isa => 'RDF::Trine::Node');
 has 'imports' => (
 	is         => 'rw',
 	isa        => 'ArrayRef',
@@ -42,15 +42,18 @@ has 'axioms' => (
 sub fs_arguments
 {
 	my ($self) = @_;
-	if ($self->versionURI && $self->ontologyURI)
+	
+	my @imports = map { sprintf('Import(%s)', $_->as_ntriples) } @{$self->imports};
+	
+	if (defined $self->versionIRI and defined $self->ontologyIRI)
 	{
-		return ($self->ontologyURI, $self->versionURI, @{$self->imports});
+		return ($self->ontologyIRI, $self->versionIRI, @imports);
 	}
-	if ($self->ontologyURI)
+	if (defined $self->ontologyIRI)
 	{
-		return ($self->ontologyURI, @{$self->imports});
+		return ($self->ontologyIRI, @imports);
 	}
-	return @{$self->imports};
+	return @imports;
 }
 
 1;
@@ -87,14 +90,14 @@ The value is a ArrayRef.
 =item C<< imports >>
 
 A list of imported ontologies.
-The value is a ArrayRef.
+The value is a ArrayRef of RDF::Trine::Node objects.
 
-=item C<< ontologyURI >>
+=item C<< ontologyIRI >>
 
 A URI identifying the ontology.
 The value is a RDF::Trine::Node.
 
-=item C<< versionURI >>
+=item C<< versionIRI >>
 
 A URI identifying the version of the ontology.
 The value is a RDF::Trine::Node.

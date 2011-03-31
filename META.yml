@@ -33,4 +33,4 @@ resources:
   homepage: http://search.cpan.org/dist/OWL-DirectSemantics/
   license: http://dev.perl.org/licenses/
   repository: http://goddamn.co.uk/viewvc/perlmods/OWL-DirectSemantics/
-version: 0.000_01
+version: 0.000_02
