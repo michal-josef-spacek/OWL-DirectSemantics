@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::NamedIndividual;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::NamedIndividual::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::NamedIndividual::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::NamedIndividual::VERSION   = '0.001';
 };
 
 use 5.008;

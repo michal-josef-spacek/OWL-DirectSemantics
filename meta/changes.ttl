@@ -42,3 +42,15 @@ my:v_0-000_03
 		dcs:versus my:v_0-000_02
 	] .
 
+my:project :release my:v_0-001 .
+my:v_0-001
+	a               :Version ;
+	dc:issued       "2012-06-28"^^xsd:date ;
+	:revision       "0.001"^^xsd:string ;
+	:file-release   <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/OWL-DirectSemantics-0.001.tar.gz> ;
+	rdfs:label      "First official release!";
+	dcs:changeset [
+		dcs:item [ rdfs:label "s/use parent/use base/"@en ] ;
+		dcs:versus my:v_0-000_03
+	] .
+

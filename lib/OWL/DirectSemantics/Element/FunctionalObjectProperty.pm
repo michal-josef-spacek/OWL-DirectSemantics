@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::FunctionalObjectProperty;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::FunctionalObjectProperty::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::FunctionalObjectProperty::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::FunctionalObjectProperty::VERSION   = '0.001';
 };
 
 use 5.008;

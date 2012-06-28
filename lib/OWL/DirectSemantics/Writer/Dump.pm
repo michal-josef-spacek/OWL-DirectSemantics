@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Writer::Dump;
 
 BEGIN {
 	$OWL::DirectSemantics::Writer::Dump::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Writer::Dump::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Writer::Dump::VERSION   = '0.001';
 };
 
 use 5.008;

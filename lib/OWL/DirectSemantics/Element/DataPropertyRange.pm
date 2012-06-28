@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DataPropertyRange;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DataPropertyRange::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DataPropertyRange::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DataPropertyRange::VERSION   = '0.001';
 };
 
 use 5.008;

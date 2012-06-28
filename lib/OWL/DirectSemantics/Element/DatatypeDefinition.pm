@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DatatypeDefinition;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DatatypeDefinition::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DatatypeDefinition::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DatatypeDefinition::VERSION   = '0.001';
 };
 
 use 5.008;

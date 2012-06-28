@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::Declaration;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::Declaration::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::Declaration::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::Declaration::VERSION   = '0.001';
 };
 
 use 5.008;

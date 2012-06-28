@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DataComplementOf;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DataComplementOf::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DataComplementOf::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DataComplementOf::VERSION   = '0.001';
 };
 
 use 5.008;

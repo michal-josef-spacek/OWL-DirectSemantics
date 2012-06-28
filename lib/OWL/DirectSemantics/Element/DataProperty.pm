@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DataProperty;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DataProperty::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DataProperty::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DataProperty::VERSION   = '0.001';
 };
 
 use constant MAPPING_CODE => 'DPE';

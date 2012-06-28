@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DisjointDataProperties;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DisjointDataProperties::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DisjointDataProperties::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DisjointDataProperties::VERSION   = '0.001';
 };
 
 use 5.008;

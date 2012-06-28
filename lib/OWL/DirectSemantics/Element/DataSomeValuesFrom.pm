@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DataSomeValuesFrom;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DataSomeValuesFrom::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DataSomeValuesFrom::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DataSomeValuesFrom::VERSION   = '0.001';
 };
 
 use 5.008;

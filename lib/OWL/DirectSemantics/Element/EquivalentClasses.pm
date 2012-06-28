@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::EquivalentClasses;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::EquivalentClasses::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::EquivalentClasses::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::EquivalentClasses::VERSION   = '0.001';
 };
 
 use 5.008;

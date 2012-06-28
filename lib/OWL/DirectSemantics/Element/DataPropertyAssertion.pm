@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DataPropertyAssertion;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DataPropertyAssertion::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DataPropertyAssertion::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DataPropertyAssertion::VERSION   = '0.001';
 };
 
 use 5.008;

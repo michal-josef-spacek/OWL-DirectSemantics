@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::Class;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::Class::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::Class::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::Class::VERSION   = '0.001';
 };
 
 use constant MAPPING_CODE => 'CE';

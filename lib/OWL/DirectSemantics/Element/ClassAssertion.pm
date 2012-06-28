@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::ClassAssertion;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::ClassAssertion::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::ClassAssertion::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::ClassAssertion::VERSION   = '0.001';
 };
 
 use 5.008;

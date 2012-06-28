@@ -35,4 +35,4 @@ resources:
   homepage: https://metacpan.org/release/OWL-DirectSemantics
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-owl-directsemantics
-version: 0.000_03
+version: 0.001

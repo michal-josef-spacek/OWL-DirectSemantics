@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DataMaxCardinality;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DataMaxCardinality::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DataMaxCardinality::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DataMaxCardinality::VERSION   = '0.001';
 };
 
 use 5.008;

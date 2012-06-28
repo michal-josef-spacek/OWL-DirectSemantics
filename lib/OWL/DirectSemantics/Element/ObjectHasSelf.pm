@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::ObjectHasSelf;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::ObjectHasSelf::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::ObjectHasSelf::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::ObjectHasSelf::VERSION   = '0.001';
 };
 
 use 5.008;

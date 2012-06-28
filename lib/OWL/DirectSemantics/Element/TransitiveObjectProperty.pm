@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::TransitiveObjectProperty;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::TransitiveObjectProperty::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::TransitiveObjectProperty::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::TransitiveObjectProperty::VERSION   = '0.001';
 };
 
 use 5.008;

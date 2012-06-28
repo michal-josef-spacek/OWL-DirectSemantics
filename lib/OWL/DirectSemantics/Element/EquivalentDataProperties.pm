@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::EquivalentDataProperties;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::EquivalentDataProperties::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::EquivalentDataProperties::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::EquivalentDataProperties::VERSION   = '0.001';
 };
 
 use 5.008;

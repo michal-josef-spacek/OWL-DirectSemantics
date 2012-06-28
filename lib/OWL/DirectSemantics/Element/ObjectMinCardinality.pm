@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::ObjectMinCardinality;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::ObjectMinCardinality::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::ObjectMinCardinality::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::ObjectMinCardinality::VERSION   = '0.001';
 };
 
 use 5.008;

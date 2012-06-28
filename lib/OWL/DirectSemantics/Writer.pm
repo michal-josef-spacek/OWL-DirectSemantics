@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Writer;
 
 BEGIN {
 	$OWL::DirectSemantics::Writer::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Writer::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Writer::VERSION   = '0.001';
 };
 
 

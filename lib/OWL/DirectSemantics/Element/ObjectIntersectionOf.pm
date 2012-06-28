@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::ObjectIntersectionOf;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::ObjectIntersectionOf::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::ObjectIntersectionOf::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::ObjectIntersectionOf::VERSION   = '0.001';
 };
 
 use 5.008;

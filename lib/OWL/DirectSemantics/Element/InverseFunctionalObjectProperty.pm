@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::InverseFunctionalObjectProperty;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::InverseFunctionalObjectProperty::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::InverseFunctionalObjectProperty::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::InverseFunctionalObjectProperty::VERSION   = '0.001';
 };
 
 use 5.008;

@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::ObjectUnionOf;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::ObjectUnionOf::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::ObjectUnionOf::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::ObjectUnionOf::VERSION   = '0.001';
 };
 
 use 5.008;

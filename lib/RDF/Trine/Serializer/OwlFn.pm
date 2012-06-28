@@ -2,17 +2,14 @@ package RDF::Trine::Serializer::OwlFn;
 
 BEGIN {
 	$RDF::Trine::Serializer::OwlFn::AUTHORITY = 'cpan:TOBYINK';
-	$RDF::Trine::Serializer::OwlFn::VERSION   = '0.000_03';
+	$RDF::Trine::Serializer::OwlFn::VERSION   = '0.001';
 };
 
 use 5.008;
 use strict;
 
-
-
-
 use RDF::Trine;
-use parent qw[RDF::Trine::Serializer];
+use base qw[RDF::Trine::Serializer];
 use OWL::DirectSemantics;
 
 BEGIN

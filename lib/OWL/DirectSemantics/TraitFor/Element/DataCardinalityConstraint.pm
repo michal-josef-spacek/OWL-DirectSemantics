@@ -2,7 +2,7 @@ package OWL::DirectSemantics::TraitFor::Element::DataCardinalityConstraint;
 
 BEGIN {
 	$OWL::DirectSemantics::TraitFor::Element::DataCardinalityConstraint::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::TraitFor::Element::DataCardinalityConstraint::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::TraitFor::Element::DataCardinalityConstraint::VERSION   = '0.001';
 };
 
 use 5.008;

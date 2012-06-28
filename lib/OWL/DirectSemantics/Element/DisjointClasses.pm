@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::DisjointClasses;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::DisjointClasses::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::DisjointClasses::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::DisjointClasses::VERSION   = '0.001';
 };
 
 use 5.008;

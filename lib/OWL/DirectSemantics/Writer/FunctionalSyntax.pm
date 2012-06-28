@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Writer::FunctionalSyntax;
 
 BEGIN {
 	$OWL::DirectSemantics::Writer::FunctionalSyntax::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Writer::FunctionalSyntax::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Writer::FunctionalSyntax::VERSION   = '0.001';
 };
 
 use 5.008;

@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::Datatype;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::Datatype::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::Datatype::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::Datatype::VERSION   = '0.001';
 };
 
 use constant MAPPING_CODE => 'DR';

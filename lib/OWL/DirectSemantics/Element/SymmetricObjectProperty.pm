@@ -2,7 +2,7 @@ package OWL::DirectSemantics::Element::SymmetricObjectProperty;
 
 BEGIN {
 	$OWL::DirectSemantics::Element::SymmetricObjectProperty::AUTHORITY = 'cpan:TOBYINK';
-	$OWL::DirectSemantics::Element::SymmetricObjectProperty::VERSION   = '0.000_03';
+	$OWL::DirectSemantics::Element::SymmetricObjectProperty::VERSION   = '0.001';
 };
 
 use 5.008;
