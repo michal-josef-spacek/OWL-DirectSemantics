@@ -1,7 +1,12 @@
 package OWL::DirectSemantics::Translator;
 
-our $VERSION;
-BEGIN { $VERSION = "0.000_02"; }
+BEGIN {
+	$OWL::DirectSemantics::Translator::AUTHORITY = 'cpan:TOBYINK';
+	$OWL::DirectSemantics::Translator::VERSION   = '0.000_03';
+};
+
+
+
 
 use Moose;
 use RDF::Trine qw[statement iri literal blank variable];
@@ -655,6 +660,7 @@ sub extend_ce
 			statement(variable('x'), $OWL->onProperty, variable('y')),
 			statement(variable('x'), $OWL->uri($predicate), variable('z')),
 			);
+		
 		$self->model->get_pattern($pattern)->each(sub {
 			my ($x, $y, $z) = ($_[0]->{x}, $_[0]->{y}, $_[0]->{z});
 
@@ -671,11 +677,11 @@ sub extend_ce
 				$zname = 'value';
 			}
 			
-			if (@{ $self->OPE->{$y->sse} })
+			if (@{ $self->OPE->{$y->sse} || [] })
 			{
 				$qklass = sprintf('OWL::DirectSemantics::Element::Object%s', $klass);
 			}
-			elsif (@{ $self->DPE->{$y->sse} })
+			elsif (@{ $self->DPE->{$y->sse} || []  })
 			{
 				$qklass = sprintf('OWL::DirectSemantics::Element::Data%s', $klass);
 			}
@@ -1176,7 +1182,14 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT
 
-Copyright 2011 Toby Inkster
+Copyright 2011-2012 Toby Inkster
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
+=head1 DISCLAIMER OF WARRANTIES
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+

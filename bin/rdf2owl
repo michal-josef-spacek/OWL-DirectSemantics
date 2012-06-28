@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!perl
 
 exit(OWL::DirectSemantics::rdf2owl->run(@ARGV)) unless (caller);
 

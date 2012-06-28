@@ -1,5 +1,12 @@
 package OWL::DirectSemantics::Writer::Dump;
 
+BEGIN {
+	$OWL::DirectSemantics::Writer::Dump::AUTHORITY = 'cpan:TOBYINK';
+	$OWL::DirectSemantics::Writer::Dump::VERSION   = '0.000_03';
+};
+
+use 5.008;
+
 use Moose::Role;
 
 requires qw[element_name];
@@ -81,7 +88,14 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT
 
-Copyright 2011 Toby Inkster
+Copyright 2011-2012 Toby Inkster
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
+=head1 DISCLAIMER OF WARRANTIES
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+

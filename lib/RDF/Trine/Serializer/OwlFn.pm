@@ -1,13 +1,18 @@
 package RDF::Trine::Serializer::OwlFn;
 
+BEGIN {
+	$RDF::Trine::Serializer::OwlFn::AUTHORITY = 'cpan:TOBYINK';
+	$RDF::Trine::Serializer::OwlFn::VERSION   = '0.000_03';
+};
+
 use 5.008;
 use strict;
 
-our $VERSION;
-BEGIN { $VERSION = "0.000_02"; }
+
+
 
 use RDF::Trine;
-use base qw[RDF::Trine::Serializer];
+use parent qw[RDF::Trine::Serializer];
 use OWL::DirectSemantics;
 
 BEGIN
@@ -69,7 +74,14 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT
 
-Copyright 2011 Toby Inkster
+Copyright 2011-2012 Toby Inkster
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
+=head1 DISCLAIMER OF WARRANTIES
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+

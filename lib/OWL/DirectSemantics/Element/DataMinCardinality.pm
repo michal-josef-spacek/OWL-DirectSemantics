@@ -1,27 +1,22 @@
 package OWL::DirectSemantics::Element::DataMinCardinality;
 
-use 5.008;
-use common::sense;
+BEGIN {
+	$OWL::DirectSemantics::Element::DataMinCardinality::AUTHORITY = 'cpan:TOBYINK';
+	$OWL::DirectSemantics::Element::DataMinCardinality::VERSION   = '0.000_03';
+};
 
-our $VERSION;
-BEGIN { $VERSION = "0.000_02"; }
+use 5.008;
+
+
+
+
 
 use Moose;
 
 extends 'OWL::DirectSemantics::Element';
+with 'OWL::DirectSemantics::TraitFor::Element::DataCardinalityConstraint';
 with 'OWL::DirectSemantics::Writer::Dump';
 with 'OWL::DirectSemantics::Writer::FunctionalSyntax';
-
-has 'property' => (is => 'rw', isa => 'RDF::Trine::Node', required=>1);
-has 'datarange'=> (is => 'rw', isa => 'RDF::Trine::Node', required=>0);
-has 'value'    => (is => 'rw', isa => 'RDF::Trine::Node', required=>1);
-
-sub fs_arguments
-{
-	my ($self) = @_;
-	return ($self->value, $self->property, $self->datarange) if defined $self->datarange;
-	return ($self->value, $self->property);
-}
 
 1;
 
@@ -81,8 +76,15 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT
 
-Copyright 2011 Toby Inkster
+Copyright 2011-2012 Toby Inkster
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
+=head1 DISCLAIMER OF WARRANTIES
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
 

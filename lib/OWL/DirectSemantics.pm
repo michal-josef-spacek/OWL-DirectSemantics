@@ -1,10 +1,11 @@
 package OWL::DirectSemantics;
 
-use common::sense;
-use 5.008;
+BEGIN {
+	$OWL::DirectSemantics::AUTHORITY = 'cpan:TOBYINK';
+	$OWL::DirectSemantics::VERSION   = '0.000_03';
+};
 
-our $VERSION = '0.000_02';
-BEGIN { $VERSION = "0.000_02"; }
+use 5.008;
 
 use RDF::Trine '0.133';
 use RDF::Trine::Serializer::OwlFn;
@@ -16,10 +17,16 @@ use Module::Pluggable
 	sub_name    => 'element_modules',
 	require     => 1,
 	;
+use Module::Pluggable
+	search_path => 'OWL::DirectSemantics::TraitFor::Element',
+	sub_name    => 'element_traits',
+	require     => 1,
+	;
 use Scalar::Util qw[];
 
 BEGIN
 {
+	OWL::DirectSemantics->element_traits;
 	OWL::DirectSemantics->element_modules;
 }
 
@@ -120,7 +127,14 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT
 
-Copyright 2011 Toby Inkster
+Copyright 2011-2012 Toby Inkster
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
+=head1 DISCLAIMER OF WARRANTIES
+
+THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
