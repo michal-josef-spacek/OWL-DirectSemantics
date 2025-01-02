@@ -2,9 +2,9 @@ use lib "lib";
 use RDF::Trine::Model;
 use Data::Printer;
 use OWL::DirectSemantics;
-use RDF::TrineShortcuts;
+use RDF::TrineX::Functions -shortcuts;
 
-my $model = rdf_parse(<<'TURTLE', type=>'turtle');
+my $model = rdf_parse(<<'TURTLE', as=>'turtle', base=>'https://example.com');
 
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
